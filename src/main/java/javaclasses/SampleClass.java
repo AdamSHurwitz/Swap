@@ -8,7 +8,7 @@ public class SampleClass {
 
     public static void main(String[] arg) {
         // swap Array method
-        swap(0, 1k);
+        swap(0, 1);
         System.out.println("Answer is: " + swapArray[0] + "|" + swapArray[1] + "|" + swapArray[2]);
     }
 
