@@ -8,19 +8,17 @@ public class SampleClass {
 
     public static void main(String[] arg) {
         // swap Array method
-        swap(1, 2);
+        swap(0, 1k);
         System.out.println("Answer is: " + swapArray[0] + "|" + swapArray[1] + "|" + swapArray[2]);
     }
 
     static int[] swapArray = {7, 9, 4};
 
     public static int[] swap(int indexOne, int indexTwo) {
-        int newIndexOne;
-        int newIndexTwo;
-        newIndexOne = swapArray[indexTwo];
-        newIndexTwo = swapArray[indexOne];
-        swapArray[indexOne] = newIndexOne;
-        swapArray[indexTwo] = newIndexTwo;
+        int temp;
+        temp = swapArray[indexOne];
+        swapArray[indexOne] = swapArray[indexTwo];
+        swapArray[indexTwo] = temp;
         return swapArray;
     }
 }
