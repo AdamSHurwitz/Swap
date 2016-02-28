@@ -7,15 +7,20 @@ public class SampleClass {
     static private final String LOG_TAG = SampleClass.class.getSimpleName();
 
     public static void main(String[] arg) {
-        System.out.println("Answer is: " + stringMethod("Hello", "World"));
+        // swap Array method
+        swap(1, 2);
+        System.out.println("Answer is: " + swapArray[0] + "|" + swapArray[1] + "|" + swapArray[2]);
     }
 
     static int[] swapArray = {7, 9, 4};
 
-    public static String stringMethod(String firstWord, String secondWord) {
-        String stringToPrint;
-        stringToPrint = firstWord + " " + secondWord;
-
-        return stringToPrint;
+    public static int[] swap(int indexOne, int indexTwo) {
+        int newIndexOne;
+        int newIndexTwo;
+        newIndexOne = swapArray[indexTwo];
+        newIndexTwo = swapArray[indexOne];
+        swapArray[indexOne] = newIndexOne;
+        swapArray[indexTwo] = newIndexTwo;
+        return swapArray;
     }
 }
